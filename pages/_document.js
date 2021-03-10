@@ -1,22 +1,27 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
-    render () {
-        console.log("Hello from _document");
-        return <Html>
+  render() {
+    console.log("Hello from _document");
+    return (
+      <Html>
         <Head>
-            <meta property="og:title" content="Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More. Best Offers!"/><meta name="Keywords" content="Online Shopping in India,online Shopping store,Online Shopping Site,Buy Online,Shop Online,Online Shopping,Flipkart"></meta>
+          <meta
+            property="og:title"
+            content="Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More. Best Offers!"
+          />
+          <meta
+            name="Keywords"
+            content="Online Shopping in India,online Shopping store,Online Shopping Site,Buy Online,Shop Online,Online Shopping,Flipkart"
+          ></meta>
         </Head>
         <body>
-        <Main>
-
-        </Main>
+          <Main></Main>
         </body>
-        <NextScript>
+        <NextScript></NextScript>
+      </Html>
+    );
+  }
+}
 
-        </NextScript>
-        </Html>
-    }
-} 
-
-export default MyDocument
+export default MyDocument;
